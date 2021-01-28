@@ -95,7 +95,7 @@
         <!-- jQuery -->
     <!-- <script src="{{ asset('adminlte/plugins/jquery/jquery.js') }}"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="http://malsup.github.com/jquery.form.js"></script> 
+    <script src="https://malsup.github.com/jquery.form.js"></script> 
    <!-- Bootstrap 4 -->
    <script src="{{ asset('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
       <!-- AdminLTE App -->
