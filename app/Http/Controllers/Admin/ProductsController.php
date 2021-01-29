@@ -60,6 +60,7 @@ class ProductsController extends Controller
 
             //Resize image here
             $thumbnailpath = 'storage/products/thumbnail/'.$filenametostore;
+            dd($thumbnailpath);
             $img = Image::make($thumbnailpath)->resize(470, 600)->save($thumbnailpath);
             $path = $filenametostore;
         }
