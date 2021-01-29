@@ -59,9 +59,9 @@ class ProductsController extends Controller
             Storage::put('public/products/thumbnail/'. $filenametostore, fopen($image, 'r+'));
 
             //Resize image here
-            $thumbnailpath = 'storage/products/thumbnail/'.$filenametostore;
-            dd($thumbnailpath);
-            $img = Image::make($thumbnailpath)->resize(470, 600)->save($thumbnailpath);
+            // $thumbnailpath = 'storage/products/thumbnail/'.$filenametostore;
+            // dd($thumbnailpath);
+            // $img = Image::make($thumbnailpath)->resize(470, 600)->save($thumbnailpath);
             $path = $filenametostore;
         }
 
