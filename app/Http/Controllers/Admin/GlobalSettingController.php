@@ -64,7 +64,7 @@ class GlobalSettingController extends Controller
             Storage::put('public/logo/thumbnail/'. $filenametostore, fopen($image, 'r+'));
 
             //Resize image here
-            $thumbnailpath = public_path('storage/logo/thumbnail/'.$filenametostore);
+            $thumbnailpath = 'storage/logo/thumbnail/'.$filenametostore;
 
             $img = Image::make($thumbnailpath)->resize(60, 60)->save($thumbnailpath);
             $path = $filenametostore;
@@ -90,7 +90,7 @@ class GlobalSettingController extends Controller
             Storage::put('public/logo/thumbnail/'. $filenametostore, fopen($image, 'r+'));
 
             //Resize image here
-            $thumbnailpath = public_path('storage/logo/thumbnail/'.$filenametostore);
+            $thumbnailpath = 'storage/logo/thumbnail/'.$filenametostore;
 
             $img = Image::make($thumbnailpath)->resize(60, 60)->save($thumbnailpath);
             $footerpath = $filenametostore;
@@ -158,7 +158,7 @@ class GlobalSettingController extends Controller
             Storage::put('public/logo/thumbnail/'. $filenametostore, fopen($image, 'r+'));
 
             //Resize image here
-            $thumbnailpath = public_path('storage/logo/thumbnail/'.$filenametostore);
+            $thumbnailpath = 'storage/logo/thumbnail/'.$filenametostore;
 
             $img = Image::make($thumbnailpath)->resize(60, 60)->save($thumbnailpath);
             $path = $filenametostore;
@@ -187,7 +187,7 @@ class GlobalSettingController extends Controller
            Storage::put('public/logo/thumbnail/'. $filenametostore, fopen($image, 'r+'));
 
            //Resize image here
-           $thumbnailpath = public_path('storage/logo/thumbnail/'.$filenametostore);
+           $thumbnailpath = 'storage/logo/thumbnail/'.$filenametostore;
 
            $img = Image::make($thumbnailpath)->resize(60, 60)->save($thumbnailpath);
            $footerpath = $filenametostore;

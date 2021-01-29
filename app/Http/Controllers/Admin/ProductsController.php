@@ -59,7 +59,7 @@ class ProductsController extends Controller
             Storage::put('public/products/thumbnail/'. $filenametostore, fopen($image, 'r+'));
 
             //Resize image here
-            $thumbnailpath = public_path('storage/products/thumbnail/'.$filenametostore);
+            $thumbnailpath = 'storage/products/thumbnail/'.$filenametostore;
             $img = Image::make($thumbnailpath)->resize(470, 600)->save($thumbnailpath);
             $path = $filenametostore;
         }
@@ -99,7 +99,7 @@ class ProductsController extends Controller
                 Storage::put('public/products/'. $filenametostore, fopen($image, 'r+'));
                 Storage::put('public/products/thumbnail/'. $filenametostore, fopen($image, 'r+'));
                 //Resize image here
-                $thumbnailpath = public_path('storage/products/thumbnail/'.$filenametostore);
+                $thumbnailpath = 'storage/products/thumbnail/'.$filenametostore;
                 $img = Image::make($thumbnailpath)->resize(470, 600)->save($thumbnailpath);
                 
                 ProductsImage::create([
@@ -138,7 +138,7 @@ class ProductsController extends Controller
             Storage::put('public/products/'. $filenametostore, fopen($image, 'r+'));
             Storage::put('public/products/thumbnail/'. $filenametostore, fopen($image, 'r+'));
             //Resize image here
-            $thumbnailpath = public_path('storage/products/thumbnail/'.$filenametostore);
+            $thumbnailpath = 'storage/products/thumbnail/'.$filenametostore;
             $img = Image::make($thumbnailpath)->resize(470, 600)->save($thumbnailpath);
             $path = $filenametostore;
         }else {
@@ -181,7 +181,7 @@ class ProductsController extends Controller
                 Storage::put('public/products/'. $filenametostore, fopen($image, 'r+'));
                 Storage::put('public/products/thumbnail/'. $filenametostore, fopen($image, 'r+'));
                 //Resize image here
-                $thumbnailpath = public_path('storage/products/thumbnail/'.$filenametostore);
+                $thumbnailpath = 'storage/products/thumbnail/'.$filenametostore;
                 $img = Image::make($thumbnailpath)->resize(470, 600)->save($thumbnailpath);
                
                 ProductsImage::create([

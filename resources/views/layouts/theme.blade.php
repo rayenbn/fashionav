@@ -13,7 +13,7 @@ $global_settings = Controller::global_settings();
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">	
         <!-- Place favicon.ico in the root directory -->
-	    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">	
+	    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('theme/img/favicon.ico')}}">	
 		<!-- all CSS hear -->		
         <link rel="stylesheet" href="{{ asset('theme/css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{ asset('theme/css/font-awesome.min.css')}}">

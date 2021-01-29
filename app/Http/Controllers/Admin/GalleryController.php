@@ -59,7 +59,7 @@ class GalleryController extends Controller
                 Storage::put('public/gallery/thumbnail/'. $filenametostore, fopen($image, 'r+'));
     
                 //Resize image here
-                $thumbnailpath = public_path('storage/gallery/thumbnail/'.$filenametostore);
+                $thumbnailpath = 'storage/gallery/thumbnail/'.$filenametostore;
                 // $img = Image::make($thumbnailpath)->resize(null, 127, function($constraint) {
                 //     $constraint->aspectRatio();
                 // });
