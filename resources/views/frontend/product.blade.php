@@ -34,17 +34,17 @@ $social_media = Controller::footer();
                                 <div class="zoomWrapper">
                                     <div id="img-1" class="zoomWrapper single-zoom">
                                         <a href="#">
-                                            <img id="zoom1" src="/storage/products/thumbnail/{{ $our_product->img }}" data-zoom-image="../storage/products/thumbnail/{{ $our_product->img }}" alt="big-1">
+                                            <img id="zoom1" src="/storage/products/thumbnail/{{ $our_product->img }}" data-zoom-image="/storage/products/thumbnail/{{ $our_product->img }}" alt="big-1">
                                         </a>
                                     </div>
                                     <div class="single-zoom-thumb">
                                         <ul class="s-tab-zoom single-product-active owl-carousel" id="gallery_01">
                                         <li>
-                                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="../storage/products/thumbnail/{{ $our_product->img }}" data-zoom-image="../storage/products/thumbnail/{{ $our_product->img }}"><img src="/storage/products/thumbnail/{{ $our_product->img }}" alt="zo-th-1" /></a>
+                                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="/storage/products/thumbnail/{{ $our_product->img }}" data-zoom-image="/storage/products/thumbnail/{{ $our_product->img }}"><img src="/storage/products/thumbnail/{{ $our_product->img }}" alt="zo-th-1" /></a>
                                         </li>
                                         @foreach( $images as $image)
                                         <li>
-                                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="../storage/products/thumbnail/{{ $image->productImages }}" data-zoom-image="../storage/products/thumbnail/{{ $image->productImages }}"><img src="/storage/products/thumbnail/{{ $image->productImages }}" alt="zo-th-1" /></a>
+                                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="/storage/products/thumbnail/{{ $image->productImages }}" data-zoom-image="/storage/products/thumbnail/{{ $image->productImages }}"><img src="/storage/products/thumbnail/{{ $image->productImages }}" alt="zo-th-1" /></a>
                                         </li>
                                         @endforeach
                                         
